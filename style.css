@@ -224,3 +224,17 @@ footer {
     justify-content: center;
     gap: 10px;
 }
+
+.music-container {
+    display: flex;
+    max-width: 400px;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: lighter;
+}
+
+.song-text {
+    text-align: center;
+}
