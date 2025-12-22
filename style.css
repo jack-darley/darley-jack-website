@@ -50,7 +50,7 @@ hr {
     padding-right: 10%;
 }
 
-/* stlying for news-list items */
+/* styling for news-list items */
 .news-list ul {
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ nav ul {
     justify-content: center; 
     list-style: none;
     padding: 0px;
-    gap: 50px;
+    gap: 30px;
     position: relative;
     font-size: 20px;
     height: 70px;
