@@ -54,9 +54,10 @@ hr {
 
 .slideshow-container {
     position: relative;
-    width: 500px;
+    width: 70%;
+    max-width: 500px;
     height: 1000px;     
-    margin: 50px auto; 
+    margin: 100px auto; 
     overflow: hidden;
 }
 
