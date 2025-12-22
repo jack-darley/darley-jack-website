@@ -140,7 +140,7 @@ nav a {
 }
 
 /* PRESENTATION STYLING */
-.presentation-container {
+.presentation-container > div {
     display: flex;
     align-items: flex-start; 
     flex-direction: column;
@@ -156,6 +156,7 @@ nav a {
     height: auto;        
     border: 1px solid black;
     border-radius: 5px;
+    align-items: center;
 }
 
 .presentation-text {
