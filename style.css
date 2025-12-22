@@ -1,0 +1,65 @@
+body {
+  font-family: "Garamond", serif;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    gap: 20px;
+    position: relative;
+}
+
+/* Parent items need relative positioning */
+nav ul li {
+    position: relative;
+    padding: 5px;
+
+}
+
+/* Submenu styling */
+nav ul ul {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    left: 0;
+    background: white;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+
+    opacity: 0;
+    transform: translateY(-10px); /* start slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* prevents hovering invisible menu */
+}
+
+nav ul li:hover > ul {
+  opacity: 1;
+  transform: translateY(0); /* move into place */
+  pointer-events: auto; /* enable interaction */
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
