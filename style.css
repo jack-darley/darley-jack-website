@@ -11,6 +11,10 @@ h1 a {
     color: inherit;
 }
 
+a {
+    color: inherit;
+}
+
 h1 {
     color: rgba(0, 0, 0, 0.4);
     font-weight: 100;
@@ -19,9 +23,38 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+}
+
+/* horizontal line */
 hr {
     width: 400px;
     color: rgb(0, 0, 0, 0.1);
+}
+
+/* new-list text */
+.news-list {
+    display: flex;
+    font-size: 12pt;
+    font-weight: lighter;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* stlying for news-list items */
+.news-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 nav {
@@ -90,3 +123,35 @@ nav a {
     color: inherit;
 }
 
+/* PUBLICATION STYLING */
+.publication-text {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 12pt;
+    font-weight: lighter;
+}
+
+.publication-hr {
+    display: flex;
+    width:  50%;
+    /* color: rgb(0, 0, 0, 0.5); */
+}
+
+/* PRESENTATION STYLING */
+.presentation-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+    font-size: 12pt;
+    font-weight: lighter;
+}
+
+.presentation-image img {
+    max-width: 200px; 
+    height: auto;
+}
+
+.presentation-text {
+    flex: 1; 
+}
