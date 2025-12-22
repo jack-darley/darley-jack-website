@@ -74,7 +74,7 @@ hr {
 .nav-list {
     display: flex;
     position: relative;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     margin-bottom: 100px;
