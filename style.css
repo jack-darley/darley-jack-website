@@ -37,7 +37,8 @@ h3 {
 
 /* horizontal line */
 hr {
-    width: 400px;
+    width: 80%;
+    max-width: 600px;
     color: rgb(0, 0, 0, 0.1);
 }
 
