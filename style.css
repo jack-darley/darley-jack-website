@@ -161,3 +161,15 @@ nav a {
     flex: 1; 
     text-align: center;
 }
+
+/* FOOTER */
+footer a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0; 
+    border-top: 1px solid #ccc; 
+}
