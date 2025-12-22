@@ -1,5 +1,9 @@
+/* * {
+    outline: 1px solid rgba(255, 0, 0, 0.5); 
+} */
+
 body {
-  font-family: "Garamond", serif;
+  font-family: Helvetica;
 }
 
 h1 a {
@@ -10,34 +14,43 @@ h1 a {
 h1 {
     color: rgba(0, 0, 0, 0.4);
     font-weight: 100;
+    font-size: 34px;
     padding: 10px;
     text-align: center;
+}
+
+hr {
+    width: 400px;
+    color: rgb(0, 0, 0, 0.1);
 }
 
 nav {
   width: 100%;
 }
 
+/* top-level nav menu */
 nav ul {
     display: flex;
     justify-content: center; 
     list-style: none;
     padding: 0px;
-    margin: 0;
-    gap: 20px;
+    gap: 50px;
     position: relative;
+    font-size: 20px;
+    height: 70px;
 }
 
-/* Parent items need relative positioning */
+/* Targets each top-level item */
 nav ul li {
     position: relative;
-    padding: 5px;
-
 }
 
 /* Submenu styling */
 nav ul ul {
+    gap: 10px;
     display: flex;
+    font-size: 16px;
+    font-weight: lighter;
     flex-direction: column; 
     position: absolute;
     left: 0;
@@ -48,14 +61,28 @@ nav ul ul {
 
     opacity: 0;
     transform: translateY(-10px); /* start slightly above */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
     pointer-events: none; /* prevents hovering invisible menu */
 }
 
+/* animate dropdown menu */
 nav ul li:hover > ul {
-  opacity: 1;
-  transform: translateY(0); /* move into place */
-  pointer-events: auto; /* enable interaction */
+    opacity: 1;
+    transform: translateY(0); /* move into place */
+    pointer-events: auto; /* enable interaction */
+}
+
+/* animations for mouse over */
+nav ul ul li {
+    transform: scale(1);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+}
+
+nav ul ul li:hover {
+    /* background-color: #f0f0f0;  */
+    transform: scale(1.5);
+    transform-origin: left center;
 }
 
 nav a {
