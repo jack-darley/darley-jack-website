@@ -84,25 +84,22 @@ hr {
 /* each item in horizontal list */
 .nav-item {
     position: relative;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: lighter;
 }
 
 /* dropdown initial state */
 .dropdown {
     position: absolute;
-    list-style: none;
-    left: -50%;
     top: 100%;
-    margin-top: 0;
+    transform: translateX(-50%); 
+    margin: 0;
     padding-top: 10px;
+    padding-left: 0;
     background: white;
-    text-align: center;
-
     opacity: 0;
-    transform: translateY(-10px);
     pointer-events: none;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 /* slide dropdown menu into place */
@@ -121,8 +118,10 @@ hr {
 
 /* drop down item scaling animation */
 .dropdown-item a {
-    display: block; /* ensures transform works properly */
+    display: block; 
     transition: transform 0.1s ease;
+    white-space: nowrap;
+    transform-origin: left center;
 }
 
 .dropdown-item a:hover {
@@ -204,6 +203,11 @@ footer {
     margin: 10px;
 }
 
+.bio {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .school-info {
     display: flex;
     flex-direction: row;
@@ -224,6 +228,11 @@ footer {
     justify-content: center;
     gap: 10px;
 }
+
+
+/*  =================
+    MUSIC STYLING
+    ================= */
 
 .music-container {
     display: flex;
