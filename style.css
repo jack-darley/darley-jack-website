@@ -48,7 +48,9 @@ hr {
     /* color: rgb(0, 0, 0, 0.5); */
 }
 
-/* new-list text */
+/*  =================
+    NEWS LIST STYLING
+    ================= */
 .news-list {
     display: flex;
     font-size: 12pt;
@@ -64,73 +66,76 @@ hr {
     gap: 5px;
 }
 
-nav {
-  width: 100%;
-}
 
-/* top-level nav menu */
-nav ul {
+/*  =================
+    DROPDOWN STYLING
+    ================= */
+/* main items */
+.nav-list {
     display: flex;
-    justify-content: center; 
+    gap: 50px;
     list-style: none;
-    padding: 0px;
-    gap: 30px;
-    position: relative;
-    font-size: 20px;
-    height: 70px;
+    padding: 0;
+    margin-bottom: 100px;
+    justify-content: center;
 }
 
-/* Targets each top-level item */
-nav ul li {
+/* each item in horizontal list */
+.nav-item {
     position: relative;
-}
-
-/* Submenu styling */
-nav ul ul {
-    gap: 10px;
-    display: flex;
-    font-size: 16px;
+    font-size: 14pt;
     font-weight: lighter;
-    flex-direction: column; 
+}
+
+/* dropdown initial state */
+.dropdown {
     position: absolute;
-    left: 0;
-    background: white;
     list-style: none;
-    min-width: 150px;
-    z-index: 1000;
+    left: -50%;
+    top: 100%;
+    margin-top: 0;
+    padding-top: 10px;
+    background: white;
 
     opacity: 0;
-    transform: translateY(-10px); /* start slightly above */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    pointer-events: none; /* prevents hovering invisible menu */
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* animate dropdown menu */
-nav ul li:hover > ul {
+/* slide dropdown menu into place */
+.nav-item:hover .dropdown {
     opacity: 1;
-    transform: translateY(0); /* move into place */
-    pointer-events: auto; /* enable interaction */
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
-/* animations for mouse over */
-nav ul ul li {
-    transform: scale(1);
-    transform-origin: left center;
-    transition: transform 0.2s ease;
+/* indiv items in dropdown list */
+.dropdown-item {
+    list-style: none;
+    font-size: 12pt;
+    padding: 10px 0px;
 }
 
-nav ul ul li:hover {
-    /* background-color: #f0f0f0;  */
-    transform: scale(1.5);
-    transform-origin: left center;
+/* drop down item scaling animation */
+.dropdown-item a {
+    display: block; /* ensures transform works properly */
+    transition: transform 0.1s ease;
 }
 
-nav a {
+.dropdown-item a:hover {
+    transform: scale(1.5); /* enlarges item */
+}
+
+/* turn off styling for links within nav */
+.nav a {
     text-decoration: none;
     color: inherit;
 }
 
-/* PUBLICATION STYLING */
+/*  =================
+    PUBLICATION STYLING
+    ================= */
 .publication-text {
     display: flex;
     padding-left: 10%;
@@ -139,7 +144,9 @@ nav a {
     font-weight: lighter;
 }
 
-/* PRESENTATION STYLING */
+/*  =================
+    PRESENTATION STYLING
+    ================= */
 .presentation-container > div {
     display: flex;
     align-items: flex-start; 
