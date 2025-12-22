@@ -44,6 +44,33 @@
             </ul>
         </div>
 
+        <!--SLIDESHOW-->
+        <div>
+            <div class="slideshow-container">
+                <img class="slide" src="images/IMG_1144.jpeg" />
+                <img class="slide" src="images/IMG_1170.jpeg" />
+                <img class="slide" src="images/IMG_1193.jpeg" />
+            </div>
+        </div>
+
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
+
+            slides[currentIndex].classList.add('active');
+
+            setInterval(() => {
+                slides[currentIndex].classList.remove('active');
+                slides[currentIndex].classList.add('exit-left');
+
+                currentIndex = (currentIndex + 1) % slides.length;
+
+                slides[currentIndex].classList.remove('exit-left');
+                slides[currentIndex].classList.add('active');
+            }, 10000); // 10 seconds per slide
+        </script>
+        
+
         <!-- <footer class="footer">
             <p><a href="#">Link 1</a> | <a href="#">Link 2</a></p>
         </footer> -->
