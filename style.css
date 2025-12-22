@@ -150,9 +150,11 @@ nav a {
 }
 
 .presentation-image img {
-    max-width: 500px; 
+    width: 100%;         
+    max-width: 500px;    
+    height: auto;        
     border: 2px solid black;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .presentation-text {
