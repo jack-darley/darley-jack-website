@@ -73,6 +73,7 @@ hr {
 /* main items */
 .nav-list {
     display: flex;
+    position: relative;
     gap: 50px;
     list-style: none;
     padding: 0;
@@ -96,6 +97,7 @@ hr {
     margin-top: 0;
     padding-top: 10px;
     background: white;
+    text-align: center;
 
     opacity: 0;
     transform: translateY(-10px);
@@ -113,7 +115,7 @@ hr {
 /* indiv items in dropdown list */
 .dropdown-item {
     list-style: none;
-    font-size: 12pt;
+    font-size: 10pt;
     padding: 10px 0px;
 }
 
@@ -220,5 +222,5 @@ footer {
 .links {
     display: flex;
     justify-content: center;
-    gap: 10px
+    gap: 10px;
 }
