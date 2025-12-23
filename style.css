@@ -176,6 +176,17 @@ hr {
     color: inherit;
 }
 
+/* PUSH ELEMENTS DOWN WHEN HOVERING */
+/* wrap the content below navbar in a container */
+.main-content {
+    transition: transform 0.25s ease;
+}
+
+/* move it down when a nav item is hovered */
+.nav:hover + .main-content {
+    transform: translateY(50px); /* move down 10px when nav is hovered */
+}
+
 /*  =================
     PUBLICATION STYLING
     ================= */

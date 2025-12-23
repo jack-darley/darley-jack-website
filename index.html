@@ -33,57 +33,59 @@
             </ul>
         </nav>
 
-        <!--NEWS SECTION-->
-        <h2>News</h2>
-        <hr class="body-hr">
-        <div class="news-list">
-            <ul>
-                <li><strong>November 14th, 2025:</strong> Presented <em>Bayesian causal inference as a common principle for perception and action</em> at <a href="http://motor-conference.org/openconf.php" target="_blank">MLMC</a> in San Diego. 
-                    What an incredible experience.</li>
-            </ul>
-        </div>
-
-        <!--SLIDESHOW-->
-        <div>
-            <div class="slideshow-container">
-                <img class="slide" src="images/IMG_1144.jpeg" />
-                <img class="slide" src="images/IMG_1170.jpeg" />
-                <img class="slide" src="images/IMG_1193.jpeg" />
-                <img class="slide" src="images/IMG_1218.jpeg" />
-            </div>
-        </div>
-
-        <script>
-            const slides = document.querySelectorAll('.slide');
-            let currentIndex = 0;
-
-            slides[currentIndex].classList.add('active');
-
-            setInterval(() => {
-                slides[currentIndex].classList.remove('active');
-                slides[currentIndex].classList.add('exit-left');
-
-                currentIndex = (currentIndex + 1) % slides.length;
-
-                slides[currentIndex].classList.remove('exit-left');
-                slides[currentIndex].classList.add('active');
-            }, 10000); // 10 seconds per slide
-        </script>
-
-        <!--LINKS-->
-        <div class="about-container links" style="margin-top: 80px;">
-            <h2>Links</h2>
+        <div class="main-content">
+            <!--NEWS SECTION-->
+            <h2>News</h2>
             <hr class="body-hr">
-            <div class="links">
-                <a href="https://github.com/jack-darley" target="_blank">GitHub</a>
-                <a href="https://ccmlab.org/" target="_blank">CCM Lab</a>
-                <a href="https://www.instagram.com/jackdarley_/" target="_blank">Instagram</a>
+            <div class="news-list">
+                <ul>
+                    <li><strong>November 14th, 2025:</strong> Presented <em>Bayesian causal inference as a common principle for perception and action</em> at <a href="http://motor-conference.org/openconf.php" target="_blank">MLMC</a> in San Diego. 
+                        What an incredible experience.</li>
+                </ul>
             </div>
+
+            <!--SLIDESHOW-->
+            <div>
+                <div class="slideshow-container">
+                    <img class="slide" src="images/IMG_1144.jpeg" />
+                    <img class="slide" src="images/IMG_1170.jpeg" />
+                    <img class="slide" src="images/IMG_1193.jpeg" />
+                    <img class="slide" src="images/IMG_1218.jpeg" />
+                </div>
+            </div>
+
+            <script>
+                const slides = document.querySelectorAll('.slide');
+                let currentIndex = 0;
+
+                slides[currentIndex].classList.add('active');
+
+                setInterval(() => {
+                    slides[currentIndex].classList.remove('active');
+                    slides[currentIndex].classList.add('exit-left');
+
+                    currentIndex = (currentIndex + 1) % slides.length;
+
+                    slides[currentIndex].classList.remove('exit-left');
+                    slides[currentIndex].classList.add('active');
+                }, 10000); // 10 seconds per slide
+            </script>
+
+            <!--LINKS-->
+            <div class="about-container links" style="margin-top: 80px;">
+                <h2>Links</h2>
+                <hr class="body-hr">
+                <div class="links">
+                    <a href="https://github.com/jack-darley" target="_blank">GitHub</a>
+                    <a href="https://ccmlab.org/" target="_blank">CCM Lab</a>
+                    <a href="https://www.instagram.com/jackdarley_/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            
+            <!-- <footer class="footer">
+                <p><a href="#">Link 1</a> | <a href="#">Link 2</a></p>
+            </footer> -->
         </div>
-        
-        <!-- <footer class="footer">
-            <p><a href="#">Link 1</a> | <a href="#">Link 2</a></p>
-        </footer> -->
 
         <script src="script.js"></script>
     </body>
