@@ -120,6 +120,12 @@ hr {
     position: relative;
     font-size: 16pt;
     font-weight: lighter;
+    transition: transform 0.15s ease;
+}
+
+/* scale parent items */
+.nav-item:hover {
+    transform: scale(1.1);
 }
 
 /* dropdown initial state */
@@ -159,7 +165,7 @@ hr {
 }
 
 .dropdown-item a:hover {
-    transform: scale(1.5); /* enlarges item */
+    transform: scale(1.1); /* enlarges item */
 }
 
 /* turn off styling for links within nav */
