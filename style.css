@@ -89,8 +89,8 @@ hr {
     display: flex;
     font-size: 12pt;
     font-weight: lighter;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: 0 auto;
     max-width: 700px;
 }
