@@ -184,7 +184,7 @@ hr {
 
 /* move it down when a nav item is hovered */
 .nav:hover + .main-content {
-    transform: translateY(50px); /* move down 10px when nav is hovered */
+    transform: translateY(20px); /* move down 10px when nav is hovered */
 }
 
 /*  =================
