@@ -22,7 +22,7 @@ navItems.forEach(item => {
 const dropdown = item.querySelector('.dropdown');
 if(dropdown){
     item.addEventListener('mouseenter', () => {
-    document.querySelector('.main-content').style.transform = 'translateY(100px)';
+    document.querySelector('.main-content').style.transform = 'translateY(50px)';
     });
     item.addEventListener('mouseleave', () => {
     document.querySelector('.main-content').style.transform = '';
