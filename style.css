@@ -91,6 +91,8 @@ hr {
     font-weight: lighter;
     padding-left: 10%;
     padding-right: 10%;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 /* styling for news-list items */
@@ -178,11 +180,13 @@ hr {
     PUBLICATION STYLING
     ================= */
 .publication-text {
-    display: flex;
+    display: block;
     padding-left: 10%;
     padding-right: 10%;
     font-size: 12pt;
     font-weight: lighter;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 /*  =================
@@ -231,8 +235,9 @@ footer {
 .about {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px auto;
     font-weight: lighter;
+    max-width: 700px;
 }
 
 .about-container {
@@ -249,18 +254,25 @@ footer {
 }
 
 .school-info {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 100px;
+    margin: 40px 0 40px 0;
 }
 
-.about-label, .about-text {
+.school-row {
     display: flex;
-    flex-direction: column;  
+    gap: 40px;
+    margin: 0 70px 30px 70px; /* top, right, bottom, left */
+}
+
+.label {
+    font-weight: bolder;
     text-align: right;
-    max-width: 80%;
-    max-width: 300px;
+    min-width: 120px;
+}
+
+.text {
+    flex: 1;
+    text-align: right;
+    margin-left: 30px;
 }
 
 .links {
