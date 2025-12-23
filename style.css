@@ -141,7 +141,7 @@ hr {
     background: white;
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.1s ease, opacity 0.1s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 /* slide dropdown menu into place */
@@ -161,7 +161,7 @@ hr {
 /* drop down item scaling animation */
 .dropdown-item a {
     display: block; 
-    transition: transform 0.05s ease;
+    transition: transform 0.1s ease;
     white-space: nowrap;
     transform-origin: left center;
 }
@@ -179,7 +179,7 @@ hr {
 /* PUSH ELEMENTS DOWN WHEN HOVERING */
 /* wrap the content below navbar in a container */
 .main-content {
-    transition: transform 0.1s ease;
+    transition: transform 0.2s ease;
 }
 
 /* move it down when a nav item is hovered */
