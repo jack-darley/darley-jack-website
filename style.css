@@ -260,7 +260,7 @@ footer {
 .school-row {
     display: flex;
     gap: 40px;
-    margin: 0 70px 30px 70px; /* top, right, bottom, left */
+    margin: 0 10% 30px 10%; /* top, right, bottom, left */
 }
 
 .label {
